@@ -110,6 +110,77 @@
 //     res.innerHTML = numberSquares(firstInp.value);
 // }
 
+// ? Task #7
+// ? Recursion to Repeat a String n Number of Times
+
+// function repetition(txt, n) {
+//     if (n === 1)
+//         return txt;
+//     return txt + repetition(txt, Number(n - 1))
+// }
+
+// let btn = document.querySelector(".btn");
+
+// btn.onclick = () => {
+//     let inp1 = document.querySelector(".inp1");
+//     let inp2 = document.querySelector(".inp2");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = repetition(inp1.value, inp2.value);
+// }
+
+// ? Task #8
+// ? Travelling Salesman Problem
+
+// function paths(n) {
+//     if (n === 1)
+//         return 1;
+//     return n * paths(n - 1)
+// }
+
+// let btn = document.querySelector(".btn");
+
+// btn.onclick = () => {
+//     let inp1 = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = paths(inp1.value);
+// }
+
+// ? Task #9
+// ? Is the Last Character an "N"?
+
+// function isLastCharacterN(word) {
+//     return word.endsWith('n');
+// }
+
+// let btn = document.querySelector(".btn");
+
+// btn.onclick = () => {
+//     let inp1 = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = isLastCharacterN(inp1.value);
+// }
+
+// ? Task #10
+// ? Football Points
+
+// function footballPoints(wins, draws, losses) {
+//     return Number(wins * 3) + Number(draws);
+// }
+
+// let btn = document.querySelector(".btn");
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector(".inp1");
+//     let secondInp = document.querySelector(".inp2");
+//     let thirdInp = document.querySelector(".inp3");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = footballPoints(firstInp.value, secondInp.value, thirdInp.value);
+// }
+
 
 // todo ----- EASY -----
 
@@ -150,4 +221,60 @@
 //     let res = document.querySelector(".result");
 
 //     res.innerHTML = addUp(inp.value);
+// }
+
+// ? Task #3
+// ? Double Factorial
+
+// function doubleFactorial(num) {
+//     if (num === 0 || num === 1 || num === -1)
+//         return 1;
+//     return num * doubleFactorial(num - 2);
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let inp = document.querySelector(".inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = doubleFactorial(inp.value);
+// }
+
+// ? Task #4
+// ? Sum of the Items in an Array
+
+// function sumArray(arr) {
+//     let myArr = arr.flat(Infinity);
+//     if (myArr.length === 0)
+//         return 0;
+//     return +myArr.slice(-1) + sumArray(myArr.slice(0, myArr.length - 1));
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let inp = document.querySelector(".inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = sumArray(inp.value.trim().split(" "));
+// }
+
+
+// ? Task #5
+// ? Sum of Multiplication
+
+// function multiSum(num, ten = 10) {
+//     if (ten === 1)
+//         return num;
+//     return Number(num * ten) + multiSum(Number(num), Number(ten - 1))
+// }
+
+// let button = document.querySelector(".btn");
+
+// button.onclick = () => {
+//     let myInp = document.querySelector(".inp");
+//     let myRes = document.querySelector(".result");
+
+//     myRes.innerHTML = multiSum(myInp.value);
 // }
