@@ -278,3 +278,86 @@
 
 //     myRes.innerHTML = multiSum(myInp.value);
 // }
+
+// ? Task #6
+// ? Perimeters with a Catch
+
+// function perimeter(l, num) {
+//     return l === "s" ? 4 * num : l === "c" ? 6.28 * num : "wrong input";
+
+// }
+
+// let button = document.querySelector(".btn");
+
+// button.onclick = () => {
+//     let myInp1 = document.querySelector(".inp1");
+//     let myInp2 = document.querySelector(".inp2");
+//     let myRes = document.querySelector(".result");
+
+//     myRes.innerHTML = perimeter(myInp1.value, myInp2.value);
+// }
+
+// ? Task #7
+// ? Basic Arithmetic Operations
+
+// function operation(a, b, op) {
+//     if (op === "divide" && b === '0')
+//         return 'undefined';
+//     return op === "add" ? Number(a) + Number(b)
+//         : op === "subtract" ? Number(a) - Number(b)
+//             : op === "divide" ? Math.round(Number(a) / Number(b))
+//                 : op === "multiply" ? Number(a) * Number(b)
+//                     : "undefined";
+// }
+
+// let button = document.querySelector(".btn");
+
+// button.onclick = () => {
+//     let myInp1 = document.querySelector(".inp1");
+//     let myInp2 = document.querySelector(".inp2");
+//     let myInp3 = document.querySelector(".inp3");
+//     let myRes = document.querySelector(".result");
+
+//     myRes.innerHTML = operation(myInp1.value, myInp2.value, myInp3.value);
+// }
+
+// ? Task #8
+// ? Is it an Object?
+
+// function isObject(value) {
+//     if (value === null)
+//         return false;
+//     return typeof value === "object" ? true : false;
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let myInp = document.querySelector(".inp");
+//     let myRes = document.querySelector(".result");
+
+//     myRes.innerHTML = isObject(myInp.value);
+// }
+
+// ? Task #9
+// ? Rock, Paper, Scissors
+
+// function rps(p1, p2) {
+//     return p1 == "Rock" && p2 == "Paper" ? "The winner is p2"
+//         : p1 == "Paper" && p2 == "Rock" ? "The winner is p1"
+//             : p1 == "Scissors" && p2 == "Paper" ? "The winner is p1"
+//                 : p1 == "Paper" && p2 == "Scissors" ? "The winner is p2"
+//                     : p1 == "Rock" && p2 == "Scissors" ? "The winner is p1"
+//                         : p1 == "Scissors" && p2 == "Rock" ? "The winner is p2"
+//                             : "It's a draw"
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let firstInp = document.querySelector(".inp1");
+//     let secondInp = document.querySelector(".inp2");
+//     let myRes = document.querySelector(".result");
+
+//     myRes.innerHTML = rps(firstInp.value, secondInp.value);
+// }
