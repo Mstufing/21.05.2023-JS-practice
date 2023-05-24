@@ -1,3 +1,4 @@
+// * ----- 21.05.2023 -----
 
 // todo ----- VERY EASY -----
 
@@ -360,4 +361,213 @@
 //     let myRes = document.querySelector(".result");
 
 //     myRes.innerHTML = rps(firstInp.value, secondInp.value);
+// }
+
+// ? Task #10
+// ? Explosion Intensity
+
+// function boomIntensity(n) {
+//     if (n < 2)
+//         return "boom";
+//     else if (n % 2 === 0 && n % 5 === 0)
+//         return `B${"o".toUpperCase().repeat(n)}M!`;
+//     else if (n % 5 === 0)
+//         return `B${"o".toUpperCase().repeat(n)}M`;
+//     else if (n % 2 === 0)
+//         return `B${"o".repeat(n)}m!`;
+//     else if (n % 2 != 0)
+//         return `B${'o'.repeat(n)}m`;
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let firstInp = document.querySelector(".inp1");
+//     let myRes = document.querySelector(".result");
+
+//     myRes.innerHTML = boomIntensity(firstInp.value);
+// }
+
+
+// * ----- 23.05.2023 ----- -->
+
+// ? Task #1
+// ? Can You Spare a Square?
+
+// function tpChecker(home) {
+//     let tpRes = ((home.tp * 500) / 57) / home.people;
+//     if (tpRes > 14)
+//         return `Your TP will last ${Math.floor(tpRes)} days, no need to panic!`;
+//     return `Your TP will only last ${Math.floor(tpRes)} days, buy more!`;
+// }
+
+// ? Task #2
+// ? Positive Count / Negative Sum
+
+// function countPosSumNeg(arr) {
+//     let count = arr.filter(elem => elem > 0);
+//     let sum = arr.filter(elem => elem < 0);
+//     if (arr.length === 0)
+//         return [];
+//     return [count.length, sum.reduce((acc, cur) => Number(acc) + Number(cur))];
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let inp = document.querySelector(".inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = countPosSumNeg(inp.value.trim().split(" "));
+// }
+
+// ? Task #3
+// ? Same Parity?
+
+// function parityAnalysis(num) {
+//     let arr = num.toString().split('').reduce((acc, cur) => Number(acc) + Number(cur));
+//     return (arr % 2 === 0 && num % 2 === 0) || (arr % 2 !== 0 && num % 2 !== 0) ? true : false;
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let inp = document.querySelector(".inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = parityAnalysis(inp.value);
+// }
+
+// ? Task #4
+// ? Quadratic Equation
+
+// function quadraticEquation(a, b, c) {
+//     let abc = (-b + Math.sqrt(b * b - (4 * a * c))) / (2 * a);
+//     return abc > 0 ? abc : '';
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let inp1 = document.querySelector(".inp1");
+//     let inp2 = document.querySelector(".inp2");
+//     let inp3 = document.querySelector(".inp3");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = quadraticEquation(inp1.value, inp2.value, inp3.value);
+// }
+
+// ? Task #5
+// ? Stand in Line
+
+// function nextInLine(arr, num) {
+
+//     if (typeof arr === 'object') {
+//         arr.push(num);
+//         arr.shift();
+//         return arr;
+//     }
+//     return "No array has been selected";
+// }
+
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let inp1 = document.querySelector(".inp1");
+//     let inp2 = document.querySelector(".inp2");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = nextInLine(inp1.value.trim().split(' '), inp2.value);
+// }
+
+
+// todo ----- CLASS TASKS -----
+
+// ? Task #1
+
+// function cityFacts(city) {
+//     return `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
+// }
+
+// ? Task #2
+
+// ? 1way
+
+// function nSidedShape(num) {
+//     let obj = {
+//         1: "circle",
+//         2: "semi-circle",
+//         3: "triangle",
+//         4: "square",
+//         5: "pentagon",
+//         6: "hexagon",
+//         7: "heptagon",
+//         8: "ocatgon",
+//         9: "nonagon",
+//         10: "decagon",
+//     }
+
+//     return obj[num];
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => {
+//     let inp = document.querySelector(".inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = nSidedShape(inp.value);
+// }
+
+// console.log(nSidedShape(2));
+// console.log(nSidedShape(5))
+
+// ? 2way
+// function nSidedShape(num) {
+//     switch (num) {
+//         case 1:
+//             return "circle";
+//             break;
+//         case 2:
+//             return "semi-circle";
+//             break;
+//         case 3:
+//             return "triangle";
+//             break;
+//         case 4:
+//             return "square";
+//             break;
+//         case 5:
+//             return "pentagon";
+//             break;
+//         case 6:
+//             return "hexagon";
+//             break;
+//         case 7:
+//             return "heptagon";
+//             break;
+//         case 8:
+//             return "octagon";
+//             break;
+//         case 9:
+//             return "nonagon";
+//             break;
+//         case 10:
+//             return "decagon";
+//             break;
+//         default:
+//             return 'wrong input !!!';
+//             break;
+//     }
+// }
+
+// console.log(nSidedShape(5));
+// console.log(nSidedShape(10));
+// console.log(nSidedShape(0))
+
+// ? Task #3
+
+// function doubleEnd(obj) {
+//     return `${obj[1]} ${obj[2]} ${obj[3]} ${obj[2]}`;
 // }
